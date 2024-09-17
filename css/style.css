@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    flex: 1;
+}
+
+#dice {
+    height: 200px;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+#dice img {
+    width: 100px;
+}
+
+#credits {
+    min-height: 50px;
+    text-align: center;
+}
+
+.animated {
+    animation-name: dieroll;
+    animation-duration: 0.5s;
+}
+
+@keyframes dieroll {
+    0% { transform: rotate(-360deg);
+    translate: -250px 0px;
+    }
+    80% { transform: rotate(0deg);
+    translate: 20px 70vh;
+    }
+    100% { transform: rotate(90deg);
+    translate: 50px 40vh;
+    }
+}
